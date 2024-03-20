@@ -41,11 +41,11 @@ assign f = ((!b) && c)|| (b && (!c) && (!d));
 endmodule
 ```
 **RTL realization**
-![WhatsApp Image 2023-12-22 at 14 05 23_7aead406](https://github.com/Kamal-Raj-A/Experiment--02-Implementation-of-combinational-logic-/assets/145742556/f3211b49-bd3c-4302-b3a9-f71f4ba58fe1)
-**Output:**
-![Screenshot 2024-03-20 110300](https://github.com/thejaswinidhanaraj/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514511/e81be0dd-a33f-49f8-9b95-3a8212746bff)
+![Screenshot (15)](https://github.com/thejaswinidhanaraj/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514511/2489cefd-8f29-4889-88ae-27dbc70970f0)
 
 **RTL**
+
+![TRUTHTABLE](https://github.com/thejaswinidhanaraj/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514511/693834f3-b1cf-4550-8259-e6708d04fe4a)
 
 **Timing Diagram**
 ![Screenshot (14)](https://github.com/thejaswinidhanaraj/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514511/eabd710a-3acc-4c7b-b974-5d64c0d1ce7c)
