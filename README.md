@@ -33,26 +33,23 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 ```
-module combinationalcircuit(A,B,C,D,F1);
-input A,B,C,D;
-output F1;
-wire x1,x2,x3,x4,x5;
-assign x1=(~A)&(~B)&(~C)&(~D);
-assign x2=(A)&(~C)&(~D);
-assign x3=(~B)&(C)&(~D);
-assign x4=(~A)&(B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
-assign F1=x1|x2|x3|x4|x5;
+module BOOLEAN (e, f, a, b, c, d);
+output e, f;
+input a, b, c, d;
+assign e = a || (b && c) || ((!b) && d);
+assign f = ((!b) && c)|| (b && (!c) && (!d));
 endmodule
 ```
 **RTL realization**
 ![WhatsApp Image 2023-12-22 at 14 05 23_7aead406](https://github.com/Kamal-Raj-A/Experiment--02-Implementation-of-combinational-logic-/assets/145742556/f3211b49-bd3c-4302-b3a9-f71f4ba58fe1)
 **Output:**
-![WhatsApp Image 2023-12-22 at 14 07 03_020500d0](https://github.com/Kamal-Raj-A/Experiment--02-Implementation-of-combinational-logic-/assets/145742556/5e57d2a5-c8e3-4ba8-988e-042ebba5119b)
+![Screenshot 2024-03-20 110300](https://github.com/thejaswinidhanaraj/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514511/e81be0dd-a33f-49f8-9b95-3a8212746bff)
+
 **RTL**
 
 **Timing Diagram**
-![IMG_20231223_100210](https://github.com/Kamal-Raj-A/Experiment--02-Implementation-of-combinational-logic-/assets/145742556/61447713-d289-43b1-a284-df6ea5067c3c)
+![Screenshot (14)](https://github.com/thejaswinidhanaraj/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514511/eabd710a-3acc-4c7b-b974-5d64c0d1ce7c)
+
 **Result:**
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
